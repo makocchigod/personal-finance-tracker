@@ -224,7 +224,7 @@ def delete_transactions():
         if i["id"] != value:
             new_transactions.append(i)
     with open("transactions_database.json", "w") as f:
-        json.dump(transactions, f, ensure_ascii=False, indent=4)
+        json.dump(new_transactions, f, ensure_ascii=False, indent=4)
     print("Deleted! ")
     input("... ")
 def statistics():
