@@ -242,7 +242,7 @@ def statistics():
             if j["date"][:7] == i and j["type"] == "expenditure":
                 earnings -= j["amount"]
         chart_y.append(earnings)
-    chart_x = list(chart_x)
+    chart_x = sorted(list(chart_x))
     create_bar_chart(chart_x, chart_y, 'green', 'Monthly summary', 'Month', 'Earnings')
     months = set()
     for i in transactions:
@@ -261,7 +261,7 @@ def statistics():
                 if k["date"][:7] == i and k["type"] == "earnings" and k["category"] == j:
                     earnings += k["amount"]
             chart_y.append(earnings)
-        categories = list(categories)
+        categories = sorted(list(categories))
         create_bar_chart(categories, chart_y, 'red', i, 'Categories', 'Earnings')
     input("... ")
 while True:
