@@ -1,6 +1,6 @@
 import json
 import matplotlib.pyplot as plt
-print("\n============================\n\n      Personal Finance Tracker     \n\n============================\n\n\n")
+print("\n======================================\n\n      Personal Finance Tracker     \n\n======================================\n\n\n")
 
 def error():
     print("Incorrect Value! ")
@@ -265,7 +265,7 @@ def statistics():
         create_bar_chart(categories, chart_y, 'red', i, 'Categories', 'Earnings')
     input("... ")
 while True:
-    choice = input("\n\n==========\n1. Add Transaction\n\n2. Display All Transactions\n\n3. Browse Transactions\n\n4. Statistics\n\n5. Delete Transaction\n\n6. Exit\n\n\nWhat would you like to do?: ")
+    choice = input("\n1. Add Transaction\n\n2. Display All Transactions\n\n3. Browse Transactions\n\n4. Statistics\n\n5. Delete Transaction\n\n6. Exit\n\n\nWhat would you like to do?: ")
     if choice == '6' or choice.lower() == 'exit':
         exit()
     elif choice == '1' or choice.lower() == 'add transaction' or choice.lower() == 'add':

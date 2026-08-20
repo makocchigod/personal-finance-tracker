@@ -1,4 +1,5 @@
 # Personal Finance Tracker
+![img.png](Screenshots/menu.png) ![img_1.png](Screenshots/monthlysummary.png) ![img_2.png](Screenshots/categorieschart.png)
 
 A simple desktop application written in Python for managing personal income and expenses.
 
@@ -28,7 +29,7 @@ The project was created to practice Python programming, working with JSON data, 
 1. Clone the repository:
 
 ```bash
-git clone YOUR_REPOSITORY_URL
+git https://github.com/makocchigod/personal-finance-tracker
 ```
 
 2. Navigate to the project directory:
@@ -40,7 +41,7 @@ cd personal-finance-tracker
 3. Install the required dependencies:
 
 ```bash
-pip install matplotlib
+pip install -r requirements.txt
 ```
 
 4. Run the application:
@@ -55,9 +56,10 @@ python main.py
 personal-finance-tracker/
 │
 ├── main.py
-├── tranzakcje.json
+├── transactions_database.json
 ├── README.md
-└── requirements.txt
+├── requirements.txt
+└── Screenshots
 ```
 
 ## Data Storage
